@@ -1,0 +1,34 @@
+@startuml
+
+
+class Match {
+    + MatchNo : int
+    + WeightClass : string
+    + Pool : string
+    + Round : string
+    + Date : datetime
+    + Place
+    + Style : enumFreeGreco
+    + Mat : string
+    + Winner : enumRedBlue
+    + Time : time
+}
+
+class Participant {
+    + ID : int
+    + Name : string
+    + TechnicalPoints : int
+    + ClassificationPoints : int
+}
+
+class MatchEvent {
+    + TimePoint : datetime
+}
+
+Match -- "red\n0..1" Participant
+Match -- "blue\n0..1" Participant
+Match o-- "*" MatchEvent
+
+
+
+@enduml
