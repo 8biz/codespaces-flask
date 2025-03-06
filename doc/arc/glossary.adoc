@@ -17,6 +17,8 @@ Wiegen/Weigh-in::
 
 Auslosung/Drawing of lots:: 
 
+Pool/Pool:: Aufteilen der Ringer in Pools
+
 Starterliste/Starting list:: 
 
 Kampfpaarungen/Pairing:: 
