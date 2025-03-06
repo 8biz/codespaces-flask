@@ -1,3 +1,90 @@
-== Glossar/Glossary
+[glossary]
+= Glossar/Glossary
 
 deutsch/english
+
+[glossary]
+
+Gewichtsklasse/Weight category:: 
+
+Wettkampf/Competition:: 
+
+Einzelwettkampf/Individual competition:: 
+
+Mannschaftswettkampf/Team competition:: 
+
+Wiegen/Weigh-in:: 
+
+Auslosung/Drawing of lots:: 
+
+Starterliste/Starting list:: 
+
+Kampfpaarungen/Pairing:: 
+
+Ausscheiden/Elimination:: 
+
+Matte/Mat:: 
+
+Kampfrichter/Referee:: 
+
+Punktrichter/Judge:: 
+
+Mattenpräsident/Mat chairman:: 
+
+Kampf/Bout::
+
+Gegner/Opponent:: Rot/Red, Blau/Blue
+
+Aufruf/Call to the mat:: 
+
+Siegmöglichkeiten/Types of victories:: 
+    * Schultersieg/by fall
+    * Technische Überlegenheit/by technical superiority
+    * Punktesieg/by points
+    * Verletzung/by injury
+    * Disqualifikation/by disqualification
+    * Aufgabe/by withdrawal
+    * Nichtantreten/by default
+    * Im Falle der Punktgleichheit/In case of tie of points:
+    ** Anzahl der höchsten Wertungen/Highest value of holds
+    ** Anzahl der wenigsten Verwarnungen/Amount of cautions
+    ** Letzte Wertung/Last technical point(s) scored
+
+
+Mannschaftswertung/Team ranking:: 
+
+Bewertung/Evaluation:: 
+
+Wertung/Value, points:: 
+
+Eintragung der Punkte/Recording the points:: 
+
+Platzierungspunkte/Classification points:: 
+
+Verwarnung/Caution:: 
+
+Aktion/action:: 
+
+Griff/Hold:: 
+
+Gefährliche Lage/Danger position:: 
+
+Bodenlage/Parterre position:: 
+
+Passivität/Passivity:: 
+
+Kampfabschnitt/Period:: 
+
+Pause/Break:: 
+
+Punkte vergeben/Award points:: 
+
+Gewinner/winner:: 
+
+Verlierer/Loser:: 
+
+Zeitnehmer/Time-keeper:: 
+
+Ansagen/Announce:: z.B. Verletzungszeit 
+
+Unterbrechung/Stoppage:: z.B bei Verletzung unterbrechen/suspend
