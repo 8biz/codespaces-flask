@@ -1,0 +1,49 @@
+= Bout/Kampf
+
+== Zustände
+
+* Erstellt
+* Eingeplant
+* Zugeteilt
+* Angenommen
+* Zurückgegeben
+* Prüfung ausstehend
+* Geprüft
+
+
+== Ereignisse
+
+=== Konzept
+
+* Jedes Ereignis hat eine ID und einen Zeitstempel
+* Ereignisse können nur hinzugefügt, aber niemals gelöscht werden
+
+=== Ereignisarten
+
+<Empfänger>, <Sieger> = rot, blau
+<Siegart> = 
+<ZeitTyp> = Kampf, VerletzungRot, VerletzungBlau, BlutRot, BlutBlau, AktivitätRot, AktivitätBlau
+<Ermahnung> = Passivität, Verwarnung, GelbeKarte, RoteKarte
+
+
+* Management-Ereignisse
+** Kampf erstellt
+** Kampf als <KampfNr> eingeplant
+** Kampf an <Matte> zugeteilt
+** Kampf an <Matte> angenommen
+** Kampferfassung freigegeben
+** Kampferfassung beendet <Sieger> <Siegart>
+** Kampfprüfung begonnen
+** Kampfergebnis bestätigt
+** Kampfergebnis abgelehnt
+* Zeit-Ereignisse
+** <ZeitTyp> gestartet
+** <ZeitTyp> gestoppt
+* Partei-Ereignisse
+** Punkte <Empfänger> <Wert> erfasst
+** <Ermahnung> erfasst
+* Korrektur-Ereignisse <ID>
+** Empfänger <Punkte/Passivität/Verwarnung> in <EmpfängerNeu> gändert
+** Punktewert in <WertNeu> geändert
+** <Punkte/Passivität/Verwarnung> zurückgenommen
+** <Zeittyp> um <Zeitspanne> korrigiert
