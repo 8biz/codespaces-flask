@@ -14,7 +14,7 @@ class Match {
     + Time : time
 }
 
-class Participant {
+class Opponent{
     + ID : int
     + Name : string
     + TechnicalPoints : int
@@ -25,8 +25,8 @@ class MatchEvent {
     + TimePoint : datetime
 }
 
-Match -- "red\n0..1" Participant
-Match -- "blue\n0..1" Participant
+Match -- "red\n0..1" Opponent
+Match -- "blue\n0..1" Opponent
 Match o-- "*" MatchEvent
 
 
