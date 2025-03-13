@@ -1,0 +1,8 @@
+= Interessante Links
+
+== Python/Flask, Angular
+
+* https://www.youtube.com/c/Programmieren[Programmieren mit Chris] - Gute 2-teilige Einführung in Flask und Ausführung auf Webserver
+
+* https://realpython.com/flask-by-example-integrating-flask-and-angularjs/
+* https://auth0.com/blog/using-python-flask-and-angular-to-build-modern-apps-part-1/
