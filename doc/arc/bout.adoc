@@ -1,6 +1,17 @@
 = Bout/Kampf
 
-== Zustände
+
+
+== Konzept "Ereignis"
+
+* Jedes Ereignis hat eine ID und einen Zeitstempel
+* Ereignisse können nur hinzugefügt, aber niemals gelöscht werden
+
+
+
+== Subdomäne "Turnier"
+
+=== Zustände
 
 * Erstellt
 * Eingeplant
@@ -10,40 +21,44 @@
 * Prüfung ausstehend
 * Geprüft
 
+=== Ereignisse
 
-== Ereignisse
-
-=== Konzept
-
-* Jedes Ereignis hat eine ID und einen Zeitstempel
-* Ereignisse können nur hinzugefügt, aber niemals gelöscht werden
-
-=== Ereignisarten
-
-<Empfänger>, <Sieger> = rot, blau
-<Siegart> = 
-<ZeitTyp> = Kampf, VerletzungRot, VerletzungBlau, BlutRot, BlutBlau, AktivitätRot, AktivitätBlau
-<Ermahnung> = Passivität, Verwarnung, GelbeKarte, RoteKarte
+* Kampf erstellt
+* Kampf als <KampfNr> eingeplant
+* Kampf an <Matte> zugeteilt
+* Kampf an <Matte> angenommen
+* Kampferfassung freigegeben
+* Kampferfassung beendet <Sieger> <Siegart>
+* Kampfprüfung begonnen
+* Kampfergebnis bestätigt
+* Kampfergebnis abgelehnt
 
 
-* Management-Ereignisse
-** Kampf erstellt
-** Kampf als <KampfNr> eingeplant
-** Kampf an <Matte> zugeteilt
-** Kampf an <Matte> angenommen
-** Kampferfassung freigegeben
-** Kampferfassung beendet <Sieger> <Siegart>
-** Kampfprüfung begonnen
-** Kampfergebnis bestätigt
-** Kampfergebnis abgelehnt
-* Zeit-Ereignisse
+
+== Subdomäne "Kampferfassung"
+
+=== Zustände
+
+* Geöffnet
+* Freigegeben
+* Beendet
+* Geschlossen
+
+=== Ereignisse
+
+* Parteiereignisse
+** R1, R2, R4, R5, B1, B2, B4, B5 - <Wert> Punkt(e) <Partei>
+** RP, RA, R0, RL, BP, BA, B0, BL - <Ermahnung> <Partei>
+** Parteiereignis <Seq> zurücknehmen
+** Parteiereignis <Seq> korrigieren mit <NeuesParteievent>
+
+* Zeitereignisse
 ** <ZeitTyp> gestartet
 ** <ZeitTyp> gestoppt
-* Partei-Ereignisse
-** Punkte <Empfänger> <Wert> erfasst
-** <Ermahnung> erfasst
-* Korrektur-Ereignisse <ID>
-** Empfänger <Punkte/Passivität/Verwarnung> in <EmpfängerNeu> gändert
-** Punktewert in <WertNeu> geändert
-** <Punkte/Passivität/Verwarnung> zurückgenommen
-** <Zeittyp> um <Zeitspanne> korrigiert
+** Korrektur <ZeitTyp> um X Sekunden
+
+<Partei>: rot, blau
+<Wert>: 1, 2, 4, 5
+<Ermahnung>: Passivität, Aktivitätszeit, Verwarnung, Verwarnung Bein
+<Seq>: Identifikationsnummer in der Ereignissequenz
+<ZeitTyp>: Kampfzeit, Verletzungszeit <Partei>, Verletzungszeit Blut <Partei>
